@@ -1,0 +1,80 @@
+@import '@fontsource/lato/100.css';
+@import '@fontsource/lato/300.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/raleway/400.css';
+@import '@fontsource/raleway/500.css';
+@import '@fontsource/raleway/600.css';
+@import '@fontsource/raleway/700.css';
+
+@tailwind base;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+}
+::-webkit-scrollbar {
+	display: none;
+	opacity: 0;
+	width: 0 !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+.base-container {
+	@apply w-full mx-auto md:px-8 lg:px-12;
+}
+
+.topbar {
+	@apply z-50;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+	transition: transform 300ms linear;
+}
+
+input[type='text']:focus,
+textarea:focus,
+input:focus {
+	outline: none;
+	/* border: 1px solid #43d57a;
+	box-shadow: 0 0 0 1px rgba(251, 174, 60, 0.4); */
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.btn-overide {
+	@apply bg-green-primary flex items-center gap-2 px-5 py-1 border md:text-lg text-xs rounded-lg text-white cursor-pointer hover:bg-blue-primary  hover:border-blue-primary hover:text-white transition duration-500;
+}
+
+.bg-pixel {
+	background-color: #ecfbf2;
+}
+
+.green-pixel {
+	background: rgba(67, 213, 122, 0.1);
+}
+
+@tailwind components;
+@tailwind utilities;
