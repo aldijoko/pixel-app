@@ -96,7 +96,7 @@
 					<TabBig
 						title={data.titleMedia}
 						desc={data.descMedia}
-						src="https://www.youtube.com/embed/q_18LCWtn08"
+						src="https://www.youtube.com/embed/7Yw9H0sTowQ"
 						href="services"
 						buttonTxt={data.contactUs}
 						viewTxt={data.viewPhoto}
@@ -125,7 +125,7 @@
 						title={data.titlePrint}
 						desc={data.descPrint}
 						imgOverlay="/img/service/production/production-asset.png"
-						src="https://www.youtube.com/embed/q_18LCWtn08"
+						src="https://www.youtube.com/embed/ZJThsaezw2w"
 						buttonTxt={data.contactUs}
 						viewTxt={data.viewPhoto}
 					/>
