@@ -124,6 +124,7 @@
 					<TabBig
 						title={data.titlePrint}
 						desc={data.descPrint}
+						imgOverlay="/img/service/production/production-asset.png"
 						src="https://www.youtube.com/embed/q_18LCWtn08"
 						buttonTxt={data.contactUs}
 						viewTxt={data.viewPhoto}
@@ -339,21 +340,21 @@
 			<NewsCard
 				title="Design Thinking vs Metode Ilmiah, Mana yang Unggul?"
 				customClass="bg-grey-primary"
-				image="/img/insight/blog-1.png"
+				image="/img/home/blogone.jpeg"
 				imgAlt="blog-1"
 				href="insight/design-thinking-vs-metode-ilmiah-mana-yang-unggul"
 			/>
 			<NewsCard
 				title="6 Keunggulan OOH yang Tak Dimiliki Iklan Online"
 				customClass="bg-grey-primary"
-				image="/img/insight/blog-1.png"
+				image="/img/home/blogtwo.jpeg"
 				imgAlt="blog-2"
 				href="insight/6-keunggulan-ooh-yang-tak-dimiliki-iklan-online"
 			/>
 			<NewsCard
 				title="Influencer Marketing jadi Pilar Kampanye dalam Industri Hiburan"
 				customClass="bg-grey-primary"
-				image="/img/insight/blog-1.png"
+				image="/img/home/blogthree.jpeg"
 				imgAlt="blog-3"
 				href="insight/influencer-marketing-jadi-pilar-kampanye-dalam-industri-hiburan"
 			/>

@@ -97,7 +97,7 @@
 			</button>
 		</div>
 		<div class="w-full p-4">
-			<img class="w-full" src="/img/service/cuit/cuit2.png" alt="dummy" />
+			<img class="w-full" src="/img/service/cuit/cuit3.png" alt="dummy" />
 		</div>
 		<!-- <div class="w-1/2 p-5">
 			<div class="flex justify-between items-center">
@@ -162,7 +162,7 @@
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<img
 						class="w-[250px] h-full rounded-md object-cover cursor-pointer"
-						src="/img/service/cuit/cuit2.png"
+						src="/img/service/cuit/cuit3.png"
 						alt=""
 						on:click={onImgThree}
 					/>

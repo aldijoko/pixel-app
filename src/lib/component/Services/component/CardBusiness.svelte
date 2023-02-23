@@ -20,11 +20,16 @@
 </script>
 
 <Modal bind:visible={openImgOne}>
-	<div class=" flex border rounded-md p-5" style="min-width: 1028px; max-height: max-content;">
-		<div class="w-1/2 p-4">
+	<div class="w-full border rounded-md p-2">
+		<div class="w-full flex justify-end">
+			<button on:click={() => (openImgOne = false)}>
+				<span class="iconify text-2xl text-blue-primary" data-icon="ri:close-circle-line" />
+			</button>
+		</div>
+		<div class="w-full p-4">
 			<img class="w-full" src="/img/service/innovesia/innovesia1.png" alt="dummy" />
 		</div>
-		<div class="w-1/2 p-5">
+		<!-- <div class="w-1/2 p-5">
 			<div class="flex justify-between items-center">
 				<h3 class="text-blue-primary font-bold text-3xl">Bussiness Innovation</h3>
 				<button on:click={() => (openImgOne = false)}>
@@ -45,16 +50,21 @@
 					<p class="text-lg">9 units</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </Modal>
 
 <Modal bind:visible={openImgTwo}>
-	<div class=" flex border rounded-md p-5" style="min-width: 1028px; max-height: max-content;">
-		<div class="w-1/2 p-4">
+	<div class="w-full border rounded-md p-2">
+		<div class="w-full flex justify-end">
+			<button on:click={() => (openImgTwo = false)}>
+				<span class="iconify text-2xl text-blue-primary" data-icon="ri:close-circle-line" />
+			</button>
+		</div>
+		<div class="w-full p-4">
 			<img class="w-full" src="/img/service/innovesia/innovesia2.png" alt="dummy" />
 		</div>
-		<div class="w-1/2 p-5">
+		<!-- <div class="w-1/2 p-5">
 			<div class="flex justify-between items-center">
 				<h3 class="text-blue-primary font-bold text-3xl">Bussiness Innovation 2</h3>
 				<button on:click={() => (openImgTwo = false)}>
@@ -75,16 +85,21 @@
 					<p class="text-lg">9 units</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </Modal>
 
 <Modal bind:visible={openImgThree}>
-	<div class=" flex border rounded-md p-5" style="min-width: 1028px; max-height: max-content;">
-		<div class="w-1/2 p-4">
-			<img class="w-full" src="/img/service/innovesia/innovesia2.png" alt="dummy" />
+	<div class="w-full border rounded-md p-2">
+		<div class="w-full flex justify-end">
+			<button on:click={() => (openImgThree = false)}>
+				<span class="iconify text-2xl text-blue-primary" data-icon="ri:close-circle-line" />
+			</button>
 		</div>
-		<div class="w-1/2 p-5">
+		<div class="w-full p-4">
+			<img class="w-full" src="/img/service/innovesia/innovesia3.png" alt="dummy" />
+		</div>
+		<!-- <div class="w-1/2 p-5">
 			<div class="flex justify-between items-center">
 				<h3 class="text-blue-primary font-bold text-3xl">Bussiness Innovation 3</h3>
 				<button on:click={() => (openImgThree = false)}>
@@ -105,7 +120,7 @@
 					<p class="text-lg">9 units</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </Modal>
 
@@ -147,7 +162,7 @@
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<img
 						class="w-[250px] h-full rounded-md object-cover cursor-pointer"
-						src="/img/service/innovesia/innovesia2.png"
+						src="/img/service/innovesia/innovesia3.png"
 						alt=""
 						on:click={onImgThree}
 					/>
