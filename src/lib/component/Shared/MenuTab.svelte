@@ -7,7 +7,9 @@
 	const handleClick = (tabValue) => () => (activeTab = tabValue);
 </script>
 
-<div class="w-full bg-grey-primary rounded-full py-5 px-10 justify-between {customclass}">
+<div
+	class="w-full bg-grey-primary rounded-full py-3 lg:py-5 px-0 lg:px-5 justify-between {customclass}"
+>
 	{#each items as item}
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div
@@ -15,7 +17,7 @@
 			class:is-active={activeTab === item.value}
 			on:click={handleClick(item.value)}
 		>
-			<p class="text-lg font-medium">{item.name}</p>
+			<p class="text-base lg:text-lg font-medium">{item.name}</p>
 		</div>
 	{/each}
 </div>

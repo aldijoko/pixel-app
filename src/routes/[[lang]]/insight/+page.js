@@ -1,3 +1,5 @@
+export const prerender = false;
+
 const titleInsight = {
 	en: 'Your Business Increases, Due to the Right Strategy!',
 	id: 'Bisnis Anda Bertambah, Karena Strategi yang Tepat!'

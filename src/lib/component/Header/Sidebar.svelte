@@ -67,7 +67,17 @@
 					/>
 				</button>
 			</div>
-			<div
+			<div class="font-medium text-base mb-1">
+				<a
+					rel="prefetch"
+					href="/en/services"
+					on:click={() => (open = false)}
+					class:is-active={pathName === '/en/services'}
+				>
+					Services
+				</a>
+			</div>
+			<!-- <div
 				class="font-medium text-base flex items-center gap-1 cursor-pointer mb-1"
 				on:click={() => {
 					if (open) {
@@ -78,8 +88,8 @@
 			>
 				<p>Services</p>
 				<span class="iconify" data-icon="akar-icons:chevron-down" />
-			</div>
-			{#if openEvent}
+			</div> -->
+			<!-- {#if openEvent}
 				{#each pathList as p}
 					<div class="px-2 flex flex-col">
 						<a
@@ -92,7 +102,7 @@
 						</a>
 					</div>
 				{/each}
-			{/if}
+			{/if} -->
 			{#each menuList as l}
 				<div class="font-medium text-base mb-1">
 					<a
@@ -109,10 +119,10 @@
 				<a href="/en/home" rel="prefetch" on:click={() => (open = false)}>
 					<span class="font-bold">EN</span>
 				</a>
-				<span>/</span>
+				<!-- <span>/</span>
 				<a href="/id/home" rel="prefetch" on:click={() => (open = false)}>
 					<span>ID</span>
-				</a>
+				</a> -->
 			</div>
 		{:else if pagesId}
 			<div class="flex justify-between items-center">
@@ -133,7 +143,17 @@
 					/>
 				</button>
 			</div>
-			<div
+			<div class="font-medium text-base mb-1">
+				<a
+					rel="prefetch"
+					href="/id/services"
+					on:click={() => (open = false)}
+					class:is-active={pathName === '/id/services'}
+				>
+					Layanan
+				</a>
+			</div>
+			<!-- <div
 				class="font-medium text-base flex items-center gap-1 cursor-pointer mb-1"
 				on:click={() => {
 					if (open) {
@@ -144,8 +164,8 @@
 			>
 				<p>Layanan</p>
 				<span class="iconify" data-icon="akar-icons:chevron-down" />
-			</div>
-			{#if openEvent}
+			</div> -->
+			<!-- {#if openEvent}
 				{#each pathList as p}
 					<div class="px-2 flex flex-col">
 						<a
@@ -158,7 +178,7 @@
 						</a>
 					</div>
 				{/each}
-			{/if}
+			{/if} -->
 			{#each menuList as l}
 				<div class="font-medium text-base mb-1">
 					<a

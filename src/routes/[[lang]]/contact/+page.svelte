@@ -21,6 +21,23 @@
 	};
 
 	export let data;
+
+	let name = '';
+	let email = '';
+	let companyName = '';
+	let business = '';
+	let message = '';
+
+	const onSend = () => {
+		const data = {
+			name,
+			email,
+			companyName,
+			business,
+			message
+		};
+		console.log(data);
+	};
 </script>
 
 <MetaData {metadata} />
@@ -50,17 +67,53 @@
 			</div>
 		</div>
 		<div class="w-full md:w-2/3 px-5">
-			<TextInput inputClass="border-blue-primary my-2" placeholder={data.inputName + '*'} />
-			<TextInput inputClass="border-blue-primary my-2" placeholder={data.inputEmail + '*'} />
-			<TextInput inputClass="border-blue-primary my-2" placeholder={data.inputCompany + '*'} />
+			<!-- <form method="POST"> -->
+			<TextInput
+				inputClass="border-blue-primary my-2"
+				placeholder={data.inputName + '*'}
+				onChange={(e) => {
+					name = e;
+				}}
+				bind:value={name}
+			/>
+			<TextInput
+				inputClass="border-blue-primary my-2"
+				placeholder={data.inputEmail + '*'}
+				bind:value={email}
+				onChange={(e) => {
+					email = e;
+				}}
+				type="email"
+			/>
+			<TextInput
+				inputClass="border-blue-primary my-2"
+				placeholder={data.inputCompany + '*'}
+				bind:value={companyName}
+				onChange={(e) => {
+					companyName = e;
+				}}
+			/>
 			<TextInput
 				inputClass="border-blue-primary mt-2 mb-4"
 				placeholder={data.inputInterest + '*'}
+				bind:value={business}
+				onChange={(e) => {
+					business = e;
+				}}
 			/>
-			<Textareainput inputClass="my-2" placeholder={data.inputMessage} />
+			<Textareainput
+				inputClass="my-2"
+				placeholder={data.inputMessage}
+				value={message}
+				onChange={(e) => {
+					message = e;
+				}}
+			/>
 			<div class="mt-2">
 				<p class="ml-2 text-[#757D8A]"><span class="text-green-500">*</span> {data.must}</p>
 				<button
+					on:click={onSend}
+					type="submit"
 					class="flex items-center gap-2 bg-green-primary px-4 py-1.5 text-white rounded-md mt-4 text-sm md:text-lg"
 				>
 					{data.submitIn}
@@ -71,6 +124,7 @@
 					/>
 				</button>
 			</div>
+			<!-- </form> -->
 		</div>
 	</div>
 	<div class="w-full flex md:flex-row flex-col-reverse py-10 md:px-[194px] px-5">
@@ -90,8 +144,9 @@
 					>
 				</p>
 				<p>
-					Email :<a href="mailto:ex@pixel.com" class="text-sm md:text-base ml-1 hover:underline"
-						>ex@pixel.com</a
+					Email :<a
+						href="mailto:contact@pixelgroup.id"
+						class="text-sm md:text-base ml-1 hover:underline">contact@pixelgroup.id</a
 					>
 				</p>
 			</div>

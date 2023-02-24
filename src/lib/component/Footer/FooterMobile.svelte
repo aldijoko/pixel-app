@@ -12,7 +12,11 @@
 			<p>Jl. Panjang Cidodol No. 83 Kebayoran Lama Jakarta Selatan 12220</p>
 			<div class="mt-5">
 				<p>Phone : <a href="tel:+62129428555" class="hover:underline">021 2942 8555</a></p>
-				<p>Email : <a href="mailto:ex@pixel.com" class="hover:underline">ex@pixel.com</a></p>
+				<p>
+					Email : <a href="mailto:contact@pixelgroup.id" class="hover:underline"
+						>contact@pixelgroup.id</a
+					>
+				</p>
 			</div>
 		</div>
 	</div>

@@ -1,3 +1,5 @@
+export const prerender = false;
+
 const read = {
 	en: 'Read More',
 	id: 'Baca Selengkapnya'

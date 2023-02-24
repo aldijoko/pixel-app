@@ -65,7 +65,7 @@ input:focus {
 }
 
 .btn-overide {
-	@apply bg-green-primary flex items-center gap-2 px-5 py-1 border md:text-lg text-xs rounded-lg text-white cursor-pointer hover:bg-blue-primary  hover:border-blue-primary hover:text-white transition duration-500;
+	@apply bg-green-primary flex items-center gap-2 px-5 py-1 border md:text-base text-xs rounded-lg text-white cursor-pointer hover:bg-blue-primary  hover:border-blue-primary hover:text-white transition duration-500;
 }
 
 .bg-pixel {

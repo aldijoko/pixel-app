@@ -69,10 +69,10 @@
 						<a href="/en/home">
 							<span class="font-bold underline">EN</span>
 						</a>
-						<span>/</span>
+						<!-- <span>/</span>
 						<a href="/id/home">
 							<span>ID</span>
-						</a>
+						</a> -->
 					</li>
 				{:else if pagesId}
 					<li>
@@ -129,10 +129,10 @@
 						<a href="/en/home">
 							<span>EN</span>
 						</a>
-						<span>/</span>
+						<!-- <span>/</span>
 						<a href="/id/home">
 							<span class="font-bold underline">ID</span>
-						</a>
+						</a> -->
 					</li>
 				{/if}
 			</ul>

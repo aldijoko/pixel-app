@@ -8,9 +8,9 @@
 		{ descId: 'Beranda', descEn: 'Home', hrefId: '/id/home', hrefEn: '/en/home' },
 		{ descId: 'Layanan', descEn: 'Services', hrefId: '/id/services', hrefEn: '/en/services' },
 		{ descId: 'Profil', descEn: 'About Us', hrefId: '/id/about', hrefEn: '/en/about' },
-		{ descId: 'Klien Kami', descEn: 'Our Client', hrefId: '/id/client', hrefEn: '/en/client' },
+		// { descId: 'Klien Kami', descEn: 'Our Client', hrefId: '/id/client', hrefEn: '/en/client' },
 		{ descId: 'Insight', descEn: 'Insight', hrefId: '/id/insight', hrefEn: '/en/insight' },
-		{ descId: 'Karir', descEn: 'Career', hrefId: '/id/career', hrefEn: '/en/career' },
+		// { descId: 'Karir', descEn: 'Career', hrefId: '/id/career', hrefEn: '/en/career' },
 		{ descId: 'Kontak Kami', descEn: 'Contact Us', hrefId: '/id/contact', hrefEn: '/en/contact' }
 	];
 </script>
@@ -33,22 +33,44 @@
 					<p class="text-white text-sm md:text-base mb-0">
 						Phone : <a href="tel:+62129428555" class="hover:underline">021 2942 8555</a>
 					</p>
+					<p class="text-white text-sm md:text-base mb-0">
+						Whatsapp : <a
+							href="https://wa.wizard.id/1bd9f9"
+							rel="noreferrer"
+							target="_blank"
+							class="hover:underline">+62 811-1922-0654</a
+						>
+					</p>
 					<p class="text-white text-sm md:text-base">
-						Email : <a href="mailto:ex@pixel.com" class="hover:underline">ex@pixel.com</a>
+						Email : <a href="mailto:contact@pixelgroup.id" class="hover:underline"
+							>contact@pixelgroup.id</a
+						>
 					</p>
 				</div>
 			</div>
 			<div class="flex gap-5 items-center mt-5 md:mt-0">
-				<a href="">
+				<!-- <a href="https://instagram.com/pixelgroup.idn?igshid=NmE0MzVhZDY=" target="_blank" rel="noreferrer">
 					<span class="iconify text-3xl" data-icon="mdi:twitter" />
-				</a>
-				<a href="">
+				</a> -->
+				<a
+					href="https://www.facebook.com/profile.php?id=100071409057137&mibextid=ZbWKwL"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<span class="iconify text-3xl" data-icon="ri:facebook-fill" />
 				</a>
-				<a href="">
+				<a
+					href="https://instagram.com/pixelgroup.idn?igshid=NmE0MzVhZDY="
+					target="_blank"
+					rel="noreferrer"
+				>
 					<span class="iconify text-3xl" data-icon="mdi:instagram" />
 				</a>
-				<a href="">
+				<a
+					href="https://www.linkedin.com/company/pixel-group-indonesia/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<span class="iconify text-3xl" data-icon="eva:linkedin-fill" />
 				</a>
 			</div>

@@ -35,7 +35,7 @@
 					src={image}
 					alt={imgAlt}
 				/>
-				<p class="text-sm md:text-base font-medium hover:underline px-4 {customText}">
+				<p class="text-sm lg:text-base font-medium hover:underline px-4 {customText}">
 					{@html title}
 				</p>
 			</div>
