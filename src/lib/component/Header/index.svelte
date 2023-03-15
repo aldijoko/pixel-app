@@ -88,33 +88,6 @@
 							class="text-xs md:text-base"
 							class:is-active={pathName === '/id/services'}>Layanan</a
 						>
-						<!-- <span class="iconify cursor-pointer" data-icon="akar-icons:chevron-down" />
-						<div class="dropdown-content rounded-lg">
-							<a href="#" class:is-active={pathName === '/id/services/'}>
-								<div class="flex gap-3">
-									<img src="/img/icon/monitor.svg" alt="" />
-									<span>OOH Media Management</span>
-								</div>
-							</a>
-							<a href="#" class:is-active={pathName === '/id/services/'}>
-								<div class="flex gap-3">
-									<img src="/img/icon/printer.svg" alt="" />
-									<span>OOH Production</span>
-								</div>
-							</a>
-							<a href="#" class:is-active={pathName === '/id/services/'}>
-								<div class="flex gap-3">
-									<img src="/img/icon/pie-chart.svg" alt="" />
-									<span>Digital Marketing</span>
-								</div>
-							</a>
-							<a href="#" class:is-active={pathName === '/id/services/'}>
-								<div class="flex gap-3">
-									<img src="/img/icon/bulb.svg" alt="" />
-									<span>Business Innovation</span>
-								</div>
-							</a>
-						</div> -->
 					</li>
 					{#each textHeader as th}
 						<li>
@@ -129,10 +102,10 @@
 						<a href="/en/home">
 							<span>EN</span>
 						</a>
-						<!-- <span>/</span>
+						<span>/</span>
 						<a href="/id/home">
 							<span class="font-bold underline">ID</span>
-						</a> -->
+						</a>
 					</li>
 				{/if}
 			</ul>

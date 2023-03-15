@@ -1,4 +1,5 @@
 <script>
+	import { enhance } from '$app/forms';
 	import ImageLoader from '$lib/component/LazyLoader/ImageLoader.svelte';
 	import MetaData from '$lib/component/Shared/MetaData.svelte';
 	import SmallCard from '$lib/component/Shared/SmallCard.svelte';
@@ -21,23 +22,14 @@
 	};
 
 	export let data;
+	export let form;
+	console.log(form, 'ini svelte');
 
 	let name = '';
 	let email = '';
 	let companyName = '';
 	let business = '';
 	let message = '';
-
-	const onSend = () => {
-		const data = {
-			name,
-			email,
-			companyName,
-			business,
-			message
-		};
-		console.log(data);
-	};
 </script>
 
 <MetaData {metadata} />
@@ -67,64 +59,109 @@
 			</div>
 		</div>
 		<div class="w-full md:w-2/3 px-5">
-			<!-- <form method="POST"> -->
-			<TextInput
-				inputClass="border-blue-primary my-2"
-				placeholder={data.inputName + '*'}
-				onChange={(e) => {
-					name = e;
-				}}
-				bind:value={name}
-			/>
-			<TextInput
-				inputClass="border-blue-primary my-2"
-				placeholder={data.inputEmail + '*'}
-				bind:value={email}
-				onChange={(e) => {
-					email = e;
-				}}
-				type="email"
-			/>
-			<TextInput
-				inputClass="border-blue-primary my-2"
-				placeholder={data.inputCompany + '*'}
-				bind:value={companyName}
-				onChange={(e) => {
-					companyName = e;
-				}}
-			/>
-			<TextInput
-				inputClass="border-blue-primary mt-2 mb-4"
-				placeholder={data.inputInterest + '*'}
-				bind:value={business}
-				onChange={(e) => {
-					business = e;
-				}}
-			/>
-			<Textareainput
-				inputClass="my-2"
-				placeholder={data.inputMessage}
-				value={message}
-				onChange={(e) => {
-					message = e;
-				}}
-			/>
-			<div class="mt-2">
-				<p class="ml-2 text-[#757D8A]"><span class="text-green-500">*</span> {data.must}</p>
-				<button
-					on:click={onSend}
-					type="submit"
-					class="flex items-center gap-2 bg-green-primary px-4 py-1.5 text-white rounded-md mt-4 text-sm md:text-lg"
-				>
-					{data.submitIn}
-					<span
-						class="iconify text-white"
-						data-icon="teenyicons:direction-solid"
-						data-rotate="90deg"
-					/>
-				</button>
-			</div>
-			<!-- </form> -->
+			{#if form?.success}
+				<p class="text-green-primary">{form?.status || ''}</p>
+			{:else}
+				<form method="POST" class="md:mt-24 mt-5">
+					<div
+						class="mb-5 w-full border rounded-md py-2 px-4 relative"
+						class:is-error={form && !form?.name}
+					>
+						<input
+							class="w-full"
+							type="text"
+							name="name"
+							autocomplete="off"
+							placeholder={data.inputName}
+							value={form?.name ?? ''}
+						/>
+					</div>
+					<div
+						class="mb-5 w-full border rounded-md py-2 px-4"
+						class:is-error={form && !form?.email}
+					>
+						<input
+							class="w-full"
+							type="email"
+							name="email"
+							autocomplete="off"
+							placeholder={data.inputEmail}
+							value={form?.email ?? ''}
+						/>
+					</div>
+					<div
+						class="mb-5 w-full border rounded-md py-2 px-4 relative"
+						class:is-error={form && !form?.messageData}
+					>
+						<input
+							class="w-full"
+							type="text"
+							name="message"
+							autocomplete="off"
+							placeholder="Enter Message"
+							value={form?.messageData ?? ''}
+						/>
+					</div>
+					<!-- <input type="text" name="Name" id="" placeholder="Name" />
+				<input type="email" name="" id="" placeholder="Email" />
+				<textarea name="" id="" cols="30" rows="10" placeholder="Masukkan Email" /> -->
+					<!-- <TextInput
+					inputClass="border-blue-primary my-2"
+					placeholder={data.inputName + '*'}
+					onChange={(e) => {
+						name = e;
+					}}
+					bind:value={name}
+				/>
+				<TextInput
+					inputClass="border-blue-primary my-2"
+					placeholder={data.inputEmail + '*'}
+					bind:value={email}
+					onChange={(e) => {
+						email = e;
+					}}
+					type="email"
+				/>
+				<TextInput
+					inputClass="border-blue-primary my-2"
+					placeholder={data.inputCompany + '*'}
+					bind:value={companyName}
+					onChange={(e) => {
+						companyName = e;
+					}}
+				/>
+				<TextInput
+					inputClass="border-blue-primary mt-2 mb-4"
+					placeholder={data.inputInterest + '*'}
+					bind:value={business}
+					onChange={(e) => {
+						business = e;
+					}}
+				/>
+				<Textareainput
+					inputClass="my-2"
+					placeholder={data.inputMessage}
+					value={message}
+					onChange={(e) => {
+						message = e;
+					}}
+				/> -->
+					<div class="mt-2">
+						<p class="ml-2 text-[#757D8A]"><span class="text-green-500">*</span> {data.must}</p>
+						<button
+							type="submit"
+							class="flex items-center gap-2 bg-green-primary px-4 py-1.5 text-white rounded-md mt-4 text-sm md:text-lg"
+						>
+							{data.submitIn}
+							<span
+								class="iconify text-white"
+								data-icon="teenyicons:direction-solid"
+								data-rotate="90deg"
+							/>
+						</button>
+					</div>
+				</form>
+			{/if}
 		</div>
 	</div>
 	<div class="w-full flex md:flex-row flex-col-reverse py-10 md:px-[194px] px-5">
@@ -134,13 +171,21 @@
 		<div class="w-full md:w-1/2 p-5">
 			<h3 class="font-bold text-xl md:text-3xl mb-4">{data.office}</h3>
 			<p class="text-sm md:text-lg text-blue-primary mb-3">
-				{data.descContactUs}
+				{data.descOffice}
 			</p>
 			<div class="mt-3 text-sm md:text-base text-blue-primary">
 				<p class="mb-1">Jl. Panjang Cidodol No. 83 Kebayoran Lama Jakarta Selatan 12220</p>
 				<p class="mb-1">
 					{data.phone} :<a href="tel:02129428555" class="text-sm md:text-base ml-1 hover:underline"
 						>021-2942-8555</a
+					>
+				</p>
+				<p class="mb-1">
+					Whatsapp : <a
+						href="https://wa.wizard.id/1bd9f9"
+						rel="noreferrer"
+						target="_blank"
+						class="hover:underline">+62 811-1922-0654</a
 					>
 				</p>
 				<p>
@@ -161,3 +206,9 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.is-error {
+		border: 1px solid red;
+	}
+</style>

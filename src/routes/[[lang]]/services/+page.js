@@ -25,7 +25,7 @@ const oohMedia = {
 		},
 		{
 			title: 'Improved Targeting',
-			desc: 'With OOH media management, it is possible to target specific geographic areas, demographics, and even times of day, to reach the right audience at the right time.',
+			desc: 'With OOH media management, it is possible to target specific geographic areas, demographics, and even at selected time of day, to reach the right audience at the right time.',
 			icon: 'ph:radio-button'
 		},
 		{
@@ -65,11 +65,11 @@ const oohMedia = {
 
 //Production
 const serviceProductionTitle = {
-	en: 'OOH Production',
-	id: 'OOH Production'
+	en: 'OOH Production House',
+	id: 'OOH Production House'
 };
 const serviceProductionDesc = {
-	en: 'full-service digital printing company dedicated to providing high-quality, vibrant, and impactful printing solutions for businesses.',
+	en: 'Full-service digital printing company dedicated to providing high-quality, vibrant, and impactful printing solutions for businesses.',
 	id: 'perusahaan percetakan digital layanan lengkap yang didedikasikan untuk menyediakan solusi pencetakan berkualitas tinggi, bersemangat, dan berdampak untuk bisnis.'
 };
 const serviceProductionOne = {

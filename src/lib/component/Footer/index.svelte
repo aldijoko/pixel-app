@@ -112,19 +112,19 @@
 	</div>
 	<div class="px-[194px] pb-10 2xl:w-300 2xl:mx-auto hidden md:flex md:flex-row flex-col gap-5 ">
 		<div class="w-4/5 flex gap-5">
-			<div class="w-full text-lg">
+			<div class="w-full text-[17px]">
 				<a href="/en/home" class="hover:underline">
-					<p>Pixel Art</p>
+					<p>OOH Media Management</p>
 				</a>
 				<div class="border-b-8 border-green-primary mt-2" />
 			</div>
-			<div class="w-full text-lg">
+			<div class="w-full text-[17px]">
 				<a href="https://gocuit.com/">
 					<p>OOH Production</p>
 				</a>
 				<div class="border-b-8 border-green-primary mt-2" />
 			</div>
-			<div class="w-full text-lg">
+			<div class="w-full text-[17px]">
 				<a
 					href="https://www.innovesia.co.id/"
 					target="_blank"
@@ -135,7 +135,7 @@
 				</a>
 				<div class="border-b-8 border-orange-primary mt-2" />
 			</div>
-			<div class="w-full text-lg">
+			<div class="w-full text-[17px]">
 				<a href="#" class="hover:underline">
 					<p>Business Innovation</p>
 				</a>

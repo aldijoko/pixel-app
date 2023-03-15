@@ -1,11 +1,13 @@
+export const csr = false;
+
 //First Section
 const homeFirstOne = {
 	en: 'Provides Comprehensive Media Solutions With',
-	id: 'Memberikan Solusi Media Komprehensif Dengan'
+	id: 'Menyediakan Solusi Media yang Komprehensif dengan'
 };
 const homeFirstTwo = {
 	en: 'Guaranteed Experiences',
-	id: 'Pengalaman Terjamin'
+	id: 'Pengalaman'
 };
 const homeFirstThree = {
 	en: 'Innovations',
@@ -13,13 +15,13 @@ const homeFirstThree = {
 };
 const homeFirstDesc = {
 	en: 'Deliver effective advertising and quality branding campaigns to reach our clients’ target market and generate conversions.',
-	id: 'Memberikan iklan yang efektif dan kampanye branding yang berkualitas untuk menjangkau target pasar klien kami dan menghasilkan konversi.'
+	id: 'Memberikan iklan yang efektif dan kampanye branding berkualitas untuk menjangkau target pasar klien kami dan menghasilkan konversi.'
 };
 
 //Second Section
 const homeSecOne = {
 	en: 'The Answer to All Your Marketing Needs',
-	id: 'Jawaban untuk Semua Kebutuhan Pemasaran Anda'
+	id: 'Jawaban untuk Seluruh Kebutuhan Pemasaran Anda'
 };
 const homeSecTwo = {
 	en: 'Our comprehensive media solutions are well-equipped with a suite of intelligent digital tools and mediums.',
@@ -29,29 +31,30 @@ const homeSecTwo = {
 //Third Section
 const homeThirdOne = {
 	en: 'Brighten Your Businesses with Simple Solutions',
-	id: 'Terangkan Bisnis Anda dengan Solusi Sederhana'
+	id: 'Tingkatkan Bisnis Anda dengan Solusi dan Inovasi Sederhana'
 };
+
 const homeThirdTwo = {
 	en: 'Established since 2003, Pixel Group has built its reputation as a trusted partner in Indonesia OOH media Management, Digital Printing Production, Digital Marketing, and Business Innovation by delivering premium, professional and efficient integrated services for our clients.',
-	id: 'Didirikan sejak 2003, Pixel Group telah membangun reputasinya sebagai mitra yang dapat dipercaya dalam pengelolaan media luar ruang Indonesia, produksi cetak digital, pemasaran digital, dan inovasi bisnis dengan menyediakan layanan terintegrasi premium, profesional dan efisien untuk klien kami.'
+	id: 'Dibentuk sejak tahun 2003, Pixel Group telah membangun reputasinya sebagai mitra terpercaya dalam Manajemen Media OOH (Out-of-Home) di Indonesia, Produksi Percetakan Digital, Pemasaran Digital, dan Inovasi Bisnis dengan memberikan layanan terpadu yang premium, profesional, dan efisien bagi klien kami.'
 };
 const homeThirdThree = {
 	en: 'A comprehensive company with a variety of effective solutions.',
-	id: 'Perusahaan yang komprehensif dengan berbagai solusi yang efektif.'
+	id: 'Sebuah perusahaan yang terpercaya dengan berbagai solusi yang efektif.'
 };
 const homeThirdFour = {
 	en: 'Move Forward Together',
-	id: 'Bergerak Maju Bersama'
+	id: 'Melangkah Maju Bersama Pixel Group'
 };
 
 //Fourth Section
 const homeFourthOne = {
 	en: 'Increase your efficiency, productivity and business performance with Pixel Indonesia.',
-	id: 'Tingkatkan efisiensi, produktivitas dan kinerja bisnis Anda dengan Pixel Indonesia.'
+	id: 'Tingkatkan efisiensi, produktivitas, dan kinerja bisnis Anda bersama Pixel Group.'
 };
 const homeFourthTwo = {
 	en: 'Your Business Increases, Due to the Right Strategy!',
-	id: 'Bisnis Anda Bertambah, Karena Strategi yang Tepat!'
+	id: 'Informasi Terlengkap untuk Meningkatkan Kualitas Bisnis Anda!'
 };
 
 //Others
@@ -87,7 +90,7 @@ const viewPhoto = {
 //Tab Section
 //Media Management
 const titleMedia = {
-	en: 'We own & manage extensive OOH Medium within Indonesia',
+	en: 'We own & manage extensive OOH Medium in Indonesia',
 	id: 'Kami memiliki & mengelola media luar ruang yang luas di Indonesia'
 };
 const descMedia = {
@@ -129,7 +132,7 @@ const descMarketTwo = {
 
 //Business Innovation
 const titleInnov = {
-	en: 'Innovesting In Innovation',
+	en: 'Investing In Innovation',
 	id: 'Inovasi Investasi'
 };
 const descInnov = {

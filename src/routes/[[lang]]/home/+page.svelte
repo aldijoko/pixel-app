@@ -10,8 +10,9 @@
 	import { goto } from '$app/navigation';
 
 	const metadata = {
-		title: 'Home - Pixel Group',
-		description: 'Home Pixel Group',
+		title: 'Pixel Group | OOH Media Management & Creative Innovation Solutions',
+		description:
+			'Pixel Group is a leading provider of OOH Media Management and Creative Innovation Solutions in Indonesia. Our technology allows Pixel to deliver innovative and high-quality LED display solutions that can help take your advertising to the next level. Discover our pixel advertising solutions today and see how we can help you achieve your business goals. Visit our website to learn more about our display solutions and how we can help your business succeed with Pixel Group',
 		url: ''
 	};
 
@@ -330,7 +331,7 @@
 		class="max-w-full mx-auto bg-green-primary bg-vector py-10 text-center text-white hidden md:flex flex-col items-center"
 	>
 		<h2 class="text-[25px] md:text-xl lg:text-2xl xl:text-3xl font-semibold">{data.homeSecOne}</h2>
-		<p class="text-sm md:text-base py-5">
+		<p class="text-sm md:text-base py-5 text-white">
 			{data.homeFourthOne}
 		</p>
 		<a

@@ -47,7 +47,7 @@
 		description: 'Insight Pixel Group',
 		url: ''
 	};
-	onMount(() => {
+	onMount(async () => {
 		if (!$page.url.searchParams.get('category')) {
 			loadingInsight = true;
 			goto('insight?category=all');
@@ -70,12 +70,12 @@
 <MetaData {metadata} />
 <section in:fly={{ x: -30, duration: 1000, delay: 200 }} out:fly={{ x: 15, duration: 200 }}>
 	<div class="w-full pt-20 md:pt-32 pb-20 px-5 md:px-[194px]">
-		<h2 class="font-bold text-2xl md:text-4xl text-center text-black">
+		<h2 class="font-bold text-xl md:text-4xl text-center text-black">
 			{data.titleInsight}
 		</h2>
-		<!-- <p class="text-sm md:text-lg text-blue-primary pt-2 pb-8 md:py-5 text-center">
+		<p class="text-sm md:text-lg text-blue-primary pt-2 pb-8 md:py-6 text-center px-20">
 			{data.descInsight}
-		</p> -->
+		</p>
 		<div class="p-5 border-b-2 hidden md:block">
 			<div class="grid grid-cols-5 gap-5">
 				<button

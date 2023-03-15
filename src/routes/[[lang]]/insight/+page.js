@@ -2,11 +2,11 @@ export const prerender = false;
 
 const titleInsight = {
 	en: 'Your Business Increases, Due to the Right Strategy!',
-	id: 'Bisnis Anda Bertambah, Karena Strategi yang Tepat!'
+	id: 'Informasi Terlengkap untuk Meningkatkan Kualitas Bisnis Anda!'
 };
 const descInsight = {
-	en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-	id: 'Lorem Ipsum adalah teks contoh industri percetakan dan penataan huruf atau typesetting.'
+	en: `Don't miss the opportunity to find the latest tips and strategies that can help you improve the quality of your business! Get the most complete information here.`,
+	id: 'Jangan lewatkan kesempatan untuk menemukan tips dan strategi terbaru yang dapat membantu Anda meningkatkan kualitas bisnis Anda! Dapatkan informasi terlengkap di sini.'
 };
 const read = {
 	en: 'Read Article',
@@ -23,14 +23,14 @@ export async function load({ params, fetch, url }) {
 
 	if (categoryId === 'all') {
 		const res = await fetch(
-			`https://pixelgroup-inventory.com/wp-json/wp/v2/posts?_embed=&per_page=50&page=1`
+			`https://blog.pixelgroup-inventory.com/wp-json/wp/v2/posts?_embed=&per_page=50&page=1`
 		);
 
 		const blogs = await res.json();
 		blogsList = blogs;
 	} else {
 		const res = await fetch(
-			`https://pixelgroup-inventory.com/wp-json/wp/v2/posts?_embed=&per_page=50&page=1&categories=${categoryId}`
+			`https://blog.pixelgroup-inventory.com/wp-json/wp/v2/posts?_embed=&per_page=50&page=1&categories=${categoryId}`
 		);
 		const blogs = await res.json();
 		blogsList = blogs;
